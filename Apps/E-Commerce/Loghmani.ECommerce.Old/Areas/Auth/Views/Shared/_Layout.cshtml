@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="fa" class="h-full bg-gray-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const colors = require('tailwindcss/colors')
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyan: colors.cyan,
+                    }
+                }
+            },
+            plugins: [
+                require('@@tailwindcss/forms'),
+            ]
+        }
+    </script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="assets/ui/components.js"></script>
+    <title>@ViewData[nameof(View.Title)]</title>
+</head>
+
+<body class="h-full flex" style="direction: rtl;">
+    @RenderBody()
+</body>
+</html>
