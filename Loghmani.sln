@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E-Commerce", "E-Commerce", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loghmani.ECommerce.Old", "Apps\E-Commerce\Loghmani.ECommerce.Old\Loghmani.ECommerce.Old.csproj", "{CA83ED53-C7C9-46B3-9314-B924462A5235}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{DDC7D3A0-78B6-4A63-94CE-AA58C82455F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loghmani.Localization", "Libraries\Loghmani.Localization\Loghmani.Localization.csproj", "{5E3FC7E4-4D2E-45F8-A649-6B3BF9005FEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,9 +26,14 @@ Global
 		{CA83ED53-C7C9-46B3-9314-B924462A5235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA83ED53-C7C9-46B3-9314-B924462A5235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA83ED53-C7C9-46B3-9314-B924462A5235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3FC7E4-4D2E-45F8-A649-6B3BF9005FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3FC7E4-4D2E-45F8-A649-6B3BF9005FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3FC7E4-4D2E-45F8-A649-6B3BF9005FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3FC7E4-4D2E-45F8-A649-6B3BF9005FEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EB3375E9-3091-448D-84EA-190CADDFBAE3} = {E04BCC7F-B261-4066-96BA-0952D8453DC3}
 		{CA83ED53-C7C9-46B3-9314-B924462A5235} = {EB3375E9-3091-448D-84EA-190CADDFBAE3}
+		{5E3FC7E4-4D2E-45F8-A649-6B3BF9005FEC} = {DDC7D3A0-78B6-4A63-94CE-AA58C82455F8}
 	EndGlobalSection
 EndGlobal

@@ -6,4 +6,23 @@
     <!--<ImplicitUsings>enable</ImplicitUsings>-->
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+    <PackageReference Include="RepoDb" Version="1.13.1" />
+    <PackageReference Include="RepoDb.MySql" Version="1.13.1" />
+    <PackageReference Include="SqlKata" Version="2.4.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Auth\Data\" />
+    <Folder Include="wwwroot\lib\tailwindcss\css\" />
+    <Folder Include="wwwroot\lib\tailwindcss\js\" />
+  </ItemGroup>
+
 </Project>
