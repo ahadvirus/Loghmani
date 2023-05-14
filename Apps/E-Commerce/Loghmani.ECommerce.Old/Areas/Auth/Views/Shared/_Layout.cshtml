@@ -20,8 +20,8 @@
         }
     </script>
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <script src="assets/ui/components.js"></script>
     <title>@ViewData[nameof(View.Title)]</title>
+    <link rel="stylesheet" type="text/css" href="@Html.Raw(string.Format("{0}/lib/tailwindcss/components/css/main.css", Context.GetHostName()))"/>
 </head>
 
 <body class="h-full flex" style="direction: rtl;">

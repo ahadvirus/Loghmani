@@ -1,1 +1,34 @@
 ﻿@model Loghmani.ECommerce.Old.Areas.Auth.Models.ViewModels.Login.LoginVM
+
+<div class="bg-gray-100 grow shrink flex">
+        <div class="mx-auto my-auto w-7/12 py-16 px-6">
+            <div class="relative bg-white shadow-xl">
+                <h2 class="sr-only">Login form</h2>
+
+                <div class="grid grid-cols-1">
+
+                    <!-- Contact form -->
+                    <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                        <h3 class="text-lg font-medium text-gray-900">ورد به سیستم</h3>
+                        @using (Html.BeginForm(FormMethod.Post, new { @class = "mt-6 grid grid-cols-1 gap-y-6" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(model => model.ReturnUrl)
+                            <div>
+                                @Html.LabelFor(model => model.Username, new { @class = "block text-sm font-medium text-gray-900" })
+                                <div class="mt-1">
+                                    @Html.EditorFor(model => model.Username,  new { htmlAttributes = new { @class = "block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" } })
+                                </div>
+                            </div>
+                            <div>
+                                @Html.LabelFor(model => model.Password, new { @class = "block text-sm font-medium text-gray-900" })
+                                <div class="mt-1">
+                                    @Html.EditorFor(model => model.Password,  new { htmlAttributes = new { @class = "block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" } })
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
