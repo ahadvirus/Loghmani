@@ -9,7 +9,7 @@ public static class Program
         WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-        Startup.ConfigurationService(builder.Services);
+        Startup.ConfigurationService(builder.Services, builder.Configuration, builder.Environment);
 
         WebApplication app = builder.Build();
 
